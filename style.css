@@ -44,8 +44,10 @@ body {
 }
 
 
-.banner-text {
-    width: 1000px !important;
+@media (min-width: 992px) {
+    .banner-text {
+        width: 1000px !important;
+    }
 }
 
 #about {
@@ -64,10 +66,21 @@ body {
     padding: 20px;
   }
   
-  .carousel {
-    position: relative;
-    height: 450px; /* Adjust as needed */
+  @media (min-width: 768px) {
+    .carousel {
+        position: relative;
+        height: 450px; /* Adjust as needed */
+    }
   }
+
+  @media (max-width: 767px) {
+    .carousel {
+        position: relative;
+        height: 600px; /* Adjust as needed */
+    }
+  }
+
+
   
   .review {
     position: absolute;
