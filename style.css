@@ -37,7 +37,7 @@ body {
 .banner {
     position: relative;
     min-height: 550px;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), 70%, rgba(255, 255, 255, 0)), url('./assets/images/banner.jpg');
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), 70%, rgba(255, 255, 255, 0)), url('./assets/images/banner.webp');
     background-size: cover;
     background-position: center;
     z-index: 999;
