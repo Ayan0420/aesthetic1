@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="./assets/images/icons/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/images/icons/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/images/icons/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/images/icons/site.webmanifest" />
+        <title>Aesthetic Life | Beauty Clinic</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+            crossorigin="anonymous"
+        />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+            rel="stylesheet"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+            crossorigin="anonymous"
+            defer
+        ></script>
+        <link rel="stylesheet" href="./style.css" />
+        <style>
+            .hero {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(./assets/images/banner.webp);
+                padding: 80px 0;
+                background-size: cover;
+                background-position: center;
+                background-attachment: fixed;
+                text-align: center;
+            }
+            .hero h1 {
+                font-size: 3rem;
+                font-weight: 700;
+            }
+            .section {
+                padding: 60px 0;
+            }
+            .treatment-card img {
+                height: 200px;
+                object-fit: cover;
+            }
+            .card {
+                transition: transform 0.3s ease;
+
+            }
+            .card:hover {
+                transform: scale(1.05);
+            }
+            .cta-section {
+                background: linear-gradient(135deg, #181818 20%, 80%, #ffffff 100%);
+                color: white;
+                padding: 60px 0;
+            }
+            .footer {
+                background-color: #ffffff;
+                padding: 20px 0;
+                border-top: 1px solid #dee2e6;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg bg-white fs-5">
+            <div class="container">
+                <a class="navbar-brand" href="/index.html">
+                    <img
+                        class="img-fluid"
+                        width="120"
+                        src="./assets/images/aesthetic-logo.webp"
+                        alt=""
+                    />
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav gap-3 mx-auto">
+                        <a class="nav-link" aria-current="page" href="/index.html">HOME</a>
+                        <a class="nav-link" href="/about.html">ABOUT US</a>
+                        <a class="nav-link active" href="/treatment.html">OUR TREATMENT</a>
+                        <a class="nav-link" href="/contact.html">CONTACT</a>
+                    </div>
+                </div>
+                <a href="https://calendly.com/jerry-cabuntucan1/30min?month=2025-05" class="btn btn-primary rounded-pill px-4 ms-auto">BOOK NOW!</a>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container text-light">
+                <h1 class="mb-4">Our Treatments</h1>
+                <p class="lead">
+                    Explore our range of aesthetic treatments designed to enhance and define your
+                    natural beauty.
+                </p>
+            </div>
+        </section>
+
+        <!-- Treatments Section -->
+        <section class="section">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Treatment Card -->
+                    <div class="col-md-4">
+                        <div class="card treatment-card h-100">
+                            <img
+                                src="./assets/images/female-patient-receiving-botox-injection-forehead.jpg"
+                                class="card-img-top"
+                                alt="Anti-wrinkle Injections"
+                            />
+                            <div class="card-body">
+                                <h4 class="card-title">Anti-wrinkle Injections</h4>
+                                <p class="card-text">Anti-Wrinkle injections use B Tox’ to relax the muscles in your face to smooth out lines and wrinkles, such as crow’s feet and frown lines.</p>
+                                <p class="card-text text-muted">From £190</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Repeat similar blocks for other treatments -->
+                    <div class="col-md-4">
+                        <div class="card treatment-card h-100">
+                            <img
+                                src="./assets/images/lip filler.jpg"
+                                class="card-img-top"
+                                alt="Lips"
+                            />
+                            <div class="card-body">
+                                <h4 class="card-title">Dermal Fillers</h4>
+                                <p class="card-text">Dermal fillers are a non-invasive cosmetic procedure aimed at replenishing volume, reducing wrinkles, and improving facial shapes. Made mainly of hyaluronic acid—a naturally occurring substance in the skin—dermal fillers offer a rapid enhancement to your look, making you appear rejuvenated and youthful.</p>
+                                <p class="card-text text-muted">From £130</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card treatment-card h-100">
+                            <img
+                                src="./assets/images/deep renewal.jpg"
+                                class="card-img-top"
+                                alt="Deep Renewal Facials"
+                            />
+                            <div class="card-body">
+                                <h4 class="card-title">Deep Renewal Facials</h4>
+                                <p class="card-text">
+                                    Healthy skin is hydrated skin. using our advanced skin care products, it involves deep cleanse, exfoliate, using acid cleansers/mask, tone, hydrate, relaxing neck and shoulder massage, treatment mask suitable for skin concerns and finishing products. Treatment time 1hour.
+
+                                </p>
+                                <p class="card-text text-muted">From £235</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add more treatment cards as needed -->
+                    <div class="col-md-4">
+                        <div class="card treatment-card h-100">
+                            <img
+                                src="./assets/images/hair restoration.jpg"
+                                class="card-img-top"
+                                alt="PRP Hair Restoration"
+                            />
+                            <div class="card-body">
+                                <h4 class="card-title">PRP Hair Restoration</h4>
+                                <p class="card-text">
+                                    Comprehensive blood test to assess vitamin and mineral deficiencies. Six sessions of PRP hair restoration. Two cycles of Advanced hair serum with microneedling.
+                                </p>
+                                <p class="card-text text-muted">From £999</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card treatment-card h-100">
+                            <img
+                                src="./assets/images/facial.jpg"
+                                class="card-img-top"
+                                alt="HydroGlass Facial"
+                            />
+                            <div class="card-body">
+                                <h4 class="card-title">HydroGlass Facial</h4>
+                                <p class="card-text">
+                                    The HydroPeptide HydroGlass Experience facial is designed to achieve “glass skin” through a medical grade comprehensive 15-steps treatment. This advanced procedure includes physical exfoliation, a Shikimic Acid Peel, a two-step oxygenation treatment, a Moisture Infusion Mask, and LED phototherapy, resulting in plump, healthy, and radiant skin without any peeling, needles, or pain.
+                                </p>
+                                <p class="card-tex text-muted">From £295</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card treatment-card h-100">
+                            <img
+                                src="./assets/images/laser.jpg"
+                                class="card-img-top"
+                                alt="Polaris Medical ND yag Laser Hair Removal"
+                            />
+                            <div class="card-body">
+                                <h4 class="card-title">Polaris Medical ND yag Laser Hair Removal</h4>
+                                <p class="card-text">
+                                    We utilize advanced laser technology to provide top results for our clients. Polaris is among the top manufacturers of laser systems in the UK, boasting over 25 years of experience in the laser field for medical, industrial, scientific, and cosmetic uses.
+                                </p>
+                                <p class="card-text text-muted">£350</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card treatment-card h-100">
+                            <img
+                                src="./assets/images/massage.jpg"
+                                class="card-img-top"
+                                alt="Deep Tissue Massage"
+                            />
+                            <div class="card-body">
+                                <h4 class="card-title">Deep Tissue Massage</h4>
+                                <p class="card-text">
+                                    Deep tissue massage is a type of therapeutic massage that uses strong pressure and slow movements to reach the deeper layers of muscles, tendons, and fascia. Unlike relaxation or Swedish massage, which focus on relaxation and circulation, deep tissue massage targets chronic muscle tension, knots, and pain.
+                                </p>
+                                <p class="card-text text-muted">£350</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card treatment-card h-100">
+                            <img
+                                src="./assets/images/skin boosters.jpg"
+                                class="card-img-top"
+                                alt="Skin Boosters"
+                            />
+                            <div class="card-body">
+                                <h4 class="card-title">Skin Boosters</h4>
+                                <p class="card-text">
+                                    Skin Boosters are injectable hyaluronic acid that serves as an internal moisturizer to hydrate the skin, enhance skin quality, and provide an overall ‘boost’ to the complexion. The injectable enhances the skin’s elasticity, firmness, and radiance by promoting natural collagen production (we start losing collagen at age 30!). 
+                                </p>
+                                <p class="card-text text-muted">From £120</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card treatment-card h-100">
+                            <img
+                                src="./assets/images/chemical peels.jpg"
+                                class="card-img-top"
+                                alt="Skin Peels"
+                            />
+                            <div class="card-body">
+                                <h4 class="card-title">Skin Peels</h4>
+                                <p class="card-text">
+                                    If you’ve ever had a facial, you’ve had an exfoliation. This consists of removing a very superficial layer of dead skin cells to increase the penetration of cosmetics, but it doesn’t solve any deeper skin problems.
+                                </p>
+                                <p class="card-text text-muted">From £70</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action Section -->
+        <section class="cta-section text-center">
+            <div class="container">
+                <h2 class="mb-4">Ready to Enhance Your Natural Beauty?</h2>
+                <p class="lead mb-4">
+                    Book a consultation today and let us guide you on your aesthetic journey.
+                </p>
+                <a href="#contact" class="btn btn-primary btn-lg rounded-pill px-4">Book a Consultation</a>
+            </div>
+        </section>
+
+        <footer class="footer bg-light text-dark pt-5 pb-4 border-top">
+            <div class="container text-center text-md-start">
+                <div class="row">
+                    <!-- Clinic Info -->
+                    <div class="col-md-4 mb-4">
+                        <img
+                            class="img-fluid"
+                            width="150"
+                            src="./assets/images/aesthetic-logo.webp"
+                            alt=""
+                        />
+                        <!-- <h4 class="text-uppercase fw-bold">Aesthetic Life</h4> -->
+                        <p class="small text-muted">
+                            Helping you glow with confidence. London’s leading aesthetic and
+                            skincare specialists.
+                        </p>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div class="col-md-2 mb-4">
+                        <h6 class="text-uppercase">Links</h6>
+                        <ul class="list-unstyled fs-6">
+                            <li><a href="/index.html" class="text-dark text-decoration-none">Home</a></li>
+                            <li><a href="/about.html" class="text-dark text-decoration-none">About</a></li>
+                            <li>
+                                <a href="/treatment.html" class="text-dark text-decoration-none">Treatments</a>
+                            </li>
+                            <li><a href="/about.html" class="text-dark text-decoration-none">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Contact Info -->
+                    <div class="col-md-3 mb-4">
+                        <h6 class="text-uppercase">Contact</h6>
+                        <p class="small mb-1">
+                            <i class="bi bi-geo-alt-fill me-2"></i>Kensington, London, W8 5TT
+                        </p>
+                        <p class="small mb-1">
+                            <i class="bi bi-telephone-fill me-2"></i>+44 20 7946 0123
+                        </p>
+                        <p class="small">
+                            <i class="bi bi-envelope-fill me-2"></i>info@aestheniclife.co.uk
+                        </p>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="col-md-3 mb-4">
+                        <h6 class="text-uppercase">Follow Us</h6>
+                        <div class="d-flex gap-3 justify-content-center justify-content-md-start">
+                            <a href="#" class="text-dark fs-5"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="text-dark fs-5"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="text-dark fs-5"><i class="bi bi-twitter-x"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="text-muted" />
+
+                <div class="text-center small text-muted">
+                    &copy; 2025 Aesthetic Life. All rights reserved.
+                </div>
+            </div>
+        </footer>
+
+        <div class="demo-ribbon">SAMPLE ONLY</div>
+
+        <script>
+            const reviews = document.querySelectorAll(".review");
+            const next = document.getElementById("next");
+            const prev = document.getElementById("prev");
+            let index = 0;
+
+            function showReview(i) {
+                reviews.forEach((review, idx) => {
+                    review.classList.toggle("active", idx === i);
+                });
+            }
+
+            function nextReview() {
+                index = (index + 1) % reviews.length;
+                showReview(index);
+            }
+
+            function prevReview() {
+                index = (index - 1 + reviews.length) % reviews.length;
+                showReview(index);
+            }
+
+            next.addEventListener("click", nextReview);
+            prev.addEventListener("click", prevReview);
+
+            // Auto-slide every 10 seconds
+            setInterval(nextReview, 10000);
+        </script>
+    </body>
+</html>
